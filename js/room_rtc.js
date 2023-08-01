@@ -44,6 +44,7 @@ let joinRoomInit = async () => {
   channel.on('MemberLeft', handleMemberLeft)
   channel.on('ChannelMessage', handleChannelMessage)
   getMembers()
+  addBotMessageToDom(`Welcome to the room ${displayName}! 👋`)
 
 
 
